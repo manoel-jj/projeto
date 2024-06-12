@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "twitter-clone"
+version = "0.1.0"
+description = "twitter clone"
+authors = ["Denis Oliveira <denisdev3loper@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.4"
+pytest = "^8.2.2"
+factory-boy = "^3.3.0"
+django = "^5.0.6"
+django-allauth = "^0.63.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
