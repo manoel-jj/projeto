@@ -1,0 +1,12 @@
+<!-- templates/account/signup.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <form method="post" action="{% url 'account_signup' %}" class="form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Cadastre-se</button>
+    </form>
+</div>
+{% endblock %}
