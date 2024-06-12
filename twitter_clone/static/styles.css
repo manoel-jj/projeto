@@ -129,3 +129,36 @@ body {
 .form-control {
     margin-bottom: 10px;
 }
+
+/* styles.css */
+
+/* Estilizando o formulário de cadastro do Django Allauth */
+#signup_form {
+    /* Estilos gerais para o formulário */
+    max-width: 400px;
+    margin: auto;
+}
+
+#signup_form input[type=text],
+#signup_form input[type=email],
+#signup_form input[type=password] {
+    /* Estilos para campos de entrada */
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#signup_form button[type=submit] {
+    /* Estilos para o botão de submit */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos adicionais conforme necessário */

@@ -21,6 +21,11 @@
                     <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a></li>
                     {% if request.user.is_authenticated %}
                     <li class="nav-item"><a class="nav-link" href="{% url 'user_profile' request.user.username %}">Meu Perfil</a></li>
+                    {% else %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}">Login</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-primary ml-2" href="{% url 'account_signup' %}">Cadastre-se</a>
+                    </li>
                     {% endif %}
                 </ul>
             </nav>
