@@ -17,9 +17,12 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
+from twitter_clone import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('', include('tweets.urls')),
+    path("update_server/", views.update, name="update"),
+    path("hello/", views.hello_world, name="hello_world"),
 ]
