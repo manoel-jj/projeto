@@ -1,19 +1,14 @@
-<!-- pastaprincipal/twitter_clone/templates/account/login.html -->
 {% extends "base.html" %}
-{% load static %}
 
 {% block title %}Login{% endblock %}
 
 {% block content %}
-<div class="container mt-5">
+<div class="container mt-4">
     <h2>Login</h2>
     <form method="post" action="{% url 'account_login' %}">
         {% csrf_token %}
-        {{ form|crispy }}
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">Login</button>
-            <a href="{% url 'account_signup' %}" class="btn btn-success">Cadastro</a>
-        </div>
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Login</button>
     </form>
 </div>
 {% endblock %}
