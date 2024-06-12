@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    <h1>Home</h1>
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="mb-4">Home</h1>
     {% if user.is_authenticated %}
-        <form method="post" action="{% url 'create_tweet' %}">
+        <form method="post" action="{% url 'create_tweet' %}" class="mb-4">
             {% csrf_token %}
-            <textarea name="content" rows="4" cols="50" required></textarea><br>
-            <button type="submit">Tweet</button>
+            <div class="form-group">
+                <textarea name="content" class="form-control" rows="4" placeholder="What's happening?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Tweet</button>
         </form>
     {% endif %}
-    <ul>
+    <ul class="list-group">
         {% for tweet in tweets %}
-            <li><a href="{% url 'user_profile' tweet.user.username %}">{{ tweet.user.username }}</a>: {{ tweet.content }}</li>
+            <li class="list-group-item">
+                <a href="{% url 'user_profile' tweet.user.username %}" class="font-weight-bold">{{ tweet.user.username }}</a>: {{ tweet.content }}
+            </li>
         {% endfor %}
     </ul>
-</body>
-</html>
+</div>
+{% endblock %}
