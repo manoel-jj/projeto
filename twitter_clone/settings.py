@@ -56,11 +56,11 @@ WSGI_APPLICATION = "twitter_clone.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'denis',
-        'HOST': 'localhost',  # Ou o IP do seu servidor de banco de dados
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'twitter_clone_db',
+        'USER': 'denisdev',
+        'PASSWORD': 'Denis5197148',
+        'HOST': 'denisdev.mysql.pythonanywhere-services.com',  # Ou o IP do seu servidor de banco de dados
         'PORT': '5432',
     }
 }
