@@ -61,7 +61,7 @@ DATABASES = {
         'USER': 'denisdev',
         'PASSWORD': 'Denis5197148',
         'HOST': 'denisdev.mysql.pythonanywhere-services.com',  # Ou o IP do seu servidor de banco de dados
-        'PORT': '5432',
+        'PORT': '3306',
     }
 }
 
