@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Feed{% endblock %}
+
+{% block content %}
+    <h2>Your Feed</h2>
+    {% if tweets %}
+        {% for tweet in tweets %}
+            <div class="tweet">
+                <p><a href="{% url 'user_profile' tweet.user.username %}"><strong>{{ tweet.user.username }}</strong></a>: {{ tweet.content }}</p>
+                <p><em>{{ tweet.created_at }}</em></p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No tweets to display.</p>
+    {% endif %}
+{% endblock %}
