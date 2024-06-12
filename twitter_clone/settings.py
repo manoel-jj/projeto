@@ -39,7 +39,7 @@ ROOT_URLCONF = "twitter_clone.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR / "twitter_clone", "templates")],
+        "DIRS": [BASE_DIR / "twitter_clone" / "templates"],  # Verifique este caminho
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -60,11 +60,10 @@ DATABASES = {
         'NAME': 'denisdev$twitter_clone_db',
         'USER': 'denisdev',
         'PASSWORD': 'Denis5197148',
-        'HOST': 'denisdev.mysql.pythonanywhere-services.com',  # Ou o IP do seu servidor de banco de dados
+        'HOST': 'denisdev.mysql.pythonanywhere-services.com',
         'PORT': '3306',
     }
 }
-
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
@@ -92,6 +91,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
