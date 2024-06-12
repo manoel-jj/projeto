@@ -39,7 +39,7 @@ ROOT_URLCONF = "twitter_clone.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "twitter_clone" / "templates"],  # Verifique este caminho
+        "DIRS": [BASE_DIR / "twitter_clone" / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -65,7 +65,6 @@ DATABASES = {
     }
 }
 
-# Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
