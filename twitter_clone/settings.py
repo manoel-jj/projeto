@@ -58,7 +58,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'twitter_clone_db',
-        'USER': 'denisdev'@'%',
+        'USER': 'denisdev',
         'PASSWORD': 'Denis5197148',
         'HOST': 'denisdev.mysql.pythonanywhere-services.com',  # Ou o IP do seu servidor de banco de dados
         'PORT': '3306',
