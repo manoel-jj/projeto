@@ -7,7 +7,7 @@ SECRET_KEY = "django-insecure-on4$51^(63-(8cfl!#=jpak^g!r6tgcm74^)t$yiys7-^w_^-i
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'manoeldev.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'manoeldevjj.pythonanywhere.com']
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -59,10 +59,10 @@ WSGI_APPLICATION = "twitter_clone.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'manoeldev$manoeldev_twitter_clone_db',
-        'USER': 'manoeldev',
+        'NAME': 'manoeldevjj$clone',
+        'USER': 'manoeldevjj',
         'PASSWORD': 'manoeldev57516758515',
-        'HOST': 'manoeldev.mysql.pythonanywhere-services.com',
+        'HOST': 'manoeldevjj.mysql.pythonanywhere-services.com',
         'PORT': '3306',
     }
 }
