@@ -2,13 +2,13 @@
 
 /* Body Styling */
 body {
-    background-color: #f8f9fa;
+    background-color: #d9dfe6;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Navbar Styling */
 .navbar-custom {
-    background-color: #343a40;
+    background-color: #1d1f20;
 }
 
 .navbar-custom .navbar-brand, .navbar-custom .nav-link {
